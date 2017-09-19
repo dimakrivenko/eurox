@@ -1,0 +1,376 @@
+
+.l-single-page {
+    .page-header {
+        border: none;
+        padding: 0;
+        margin: 0;
+        background-image: linear-gradient(72deg, #040122, #55e6ff);
+        h1 {
+            margin: 110px 0 90px;
+            text-align: center;
+            color: #fff;
+            font: 48px/64px $geo-b;
+            text-transform: uppercase;
+            @include mq('tablet') {
+                margin: 40px 0;
+                font: 28px/36px $geo-b;
+            }
+        }
+    }
+    .page-content {
+        .content {
+            padding: 70px 0 140px;
+            @include mq('tablet') {
+                padding: 30px 0;
+            }
+            p {
+                font: 18px/26px $geo-r;
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            // FAQ
+            &.faq {
+                .list-item {
+                    .item {
+                        padding: 20px 15px;
+                        @include mq('tablet') {
+                            padding: 15px;
+                        }
+                        .top {
+                            position: relative;
+                            cursor: pointer;
+                            h4 {
+                                font: 24px $geo-m;
+                                letter-spacing: 0.8px;
+                                padding-right: 20px;
+                                @include mq('tablet') {
+                                    font-size: 20px;
+                                }
+                            }
+                            i {
+                                position: absolute;
+                                top: 11px;
+                                right: 0;
+                                width: 12px;
+                                height: 8px;
+                                transition: .4s ease;
+                                background: svg-load('../svg-icons/shevron-down.svg') no-repeat center;
+                                background-size: contain;
+                            }
+                        }
+                        .text {
+                            display: none;
+                            margin-top: 20px;
+                            @include mq('tablet') {
+                                margin-top: 15px;
+                            }
+                            p {
+                                font: 18px/26px $geo-m;
+                                margin-bottom: 15px;
+                                @include mq('tablet') {
+                                    font-size: 16px;
+                                }
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                                a {
+                                    font: 18px/26px $geo-m;
+                                    color: #56e6ff;
+                                    border-bottom: 1px solid transparent;
+                                    @include mq('tablet') {
+                                        font-size: 16px;
+                                    }
+                                    &:hover {
+                                        border-bottom-color: #56e6ff;
+                                    }
+                                }
+                            }
+                        }
+                        &.is-active {
+                            background-color: #eefcfe;
+                            .top {
+                                i {
+                                    transform: rotate(180deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // Privacy
+            &.privacy {
+                h2 {
+                    font: 36px $geo-m;
+                    text-transform: uppercase;
+                    margin-bottom: 50px;
+                    @include mq('tablet') {
+                        margin-bottom: 25px;
+                        font-size: 24px;
+                    }
+                }
+                .text {
+                    background-color: #eefcfe;
+                    padding: 15px;
+                    max-height: 600px;
+                    overflow-y: scroll;
+                    p {
+                        font: 18px/26px $geo-m;
+                        @include mq('tablet') {
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                    }
+                }
+            }
+            // Fees
+            &.fees {
+                .text {
+                    h2 {
+                        font: 36px $geo-m;
+                        text-transform: uppercase;
+                        margin-bottom: 55px;
+                        @include mq('tablet') {
+                            font-size: 24px;
+                        }
+                    }
+                    .item {
+                        @include mq('tablet-wide') {
+                            margin-bottom: 50px;
+                        }
+                        &.last {
+                            @include mq('tablet-wide') {
+                                margin-bottom: 0;
+                            }
+                        }
+                        img {
+                            width: 90%;
+                            margin-bottom: 45px;
+                            @include mq('tablet-wide') {
+                                width: 70%;
+                                margin-bottom: 15px;
+                            }
+                            @include mq('phone') {
+                                width: 100%;
+                            }
+                        }
+                        h4 {
+                            font: 24px/36px $geo-m;
+                            text-transform: uppercase;
+                            margin-bottom: 25px;
+                            @include mq('tablet') {
+                                font-size: 18px;
+                                line-height: 26px;
+                                margin-bottom: 15px;
+                            }
+                        }
+                        p {
+                            font: 18px/26px $geo-m;
+                            @include mq('tablet') {
+                                font-size: 16px;
+                                line-height: 22px;
+                            }
+                            span {
+                                opacity: .8;
+                            }
+                            strong {
+                                font-family: $geo-b;
+                            }
+                        }
+                    }
+                }
+            }
+            // Security
+            &.security {
+                img {
+                    width: 95%;
+                    @include mq('tablet-wide') {
+                        display: block;
+                        width: 300px;
+                        margin: auto;
+                    }
+                    @include mq('tablet') {
+                        width: 200px !important;
+                    }
+                }
+                .text {
+                    margin-top: 130px;
+                    @include mq('desktop') {
+                        margin-top: 40px;
+                    }
+                    p {
+                        font: 36px/48px $geo-r;
+                        @include mq('tablet-wide') {
+                            font-size: 28px;
+                            line-height: 34px;
+                        }
+                        @include mq('tablet') {
+                            font-size: 22px !important;
+                            line-height: 26px !important;
+                        }
+                        strong {
+                            font-family: $geo-b;
+                        }
+                    }
+                }
+            }
+            // Support
+            &.support {
+                h2 {
+                    font: 36px $geo-m;
+                    margin-bottom: 50px;
+                    text-transform: uppercase;
+                    @include mq('tablet-wide') {
+                        margin-bottom: 30px;
+                    }
+                    @include mq('tablet') {
+                        margin-bottom: 20px !important;
+                        font-size: 28px;
+                    }
+                }
+                .left {
+                    @include mq('tablet-wide') {
+                        margin-bottom: 60px;
+                    }
+                    h4 {
+                        font: 20px/29px $geo-b;
+                        margin-bottom: 20px;
+                        @include mq('tablet') {
+                            font-size: 18px;
+                            line-height: 26px;
+                        }
+                    }
+                    p {
+                        font: 18px/26px $geo-m;
+                        margin-bottom: 25px;
+                        opacity: .8;
+                        @include mq('tablet') {
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+                    }
+                    ul {
+                        li {
+                            list-style: none;
+                            margin-bottom: 25px;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                            i {
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin-right: 15px;
+                                width: 24px;
+                                height: 24px;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                &.phone {
+                                    background-image: svg-load('../svg-icons/support-phone.svg');
+                                }
+                                &.mail {
+                                    background-image: svg-load('../svg-icons/support-email.svg');
+                                }
+                            }
+                            a {
+                                display: inline-block;
+                                vertical-align: middle;
+                                font: 18px/26px $geo-m;
+                                color: $text-color;
+                            }
+                        }
+                    }
+                }
+                .right {
+                    form.common-form {
+                        .form-group {
+                            margin-bottom: 32px;
+                            @include mq('tablet') {
+                                margin-bottom: 20px;
+                            }
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                            .form-control {
+                                background-color: #eefcfe;
+                                border: none;
+                                border-radius: 0;
+                                box-shadow: none;
+                                background-repeat: no-repeat;
+                                background-position: 24px 20px;
+                                background-size: 24px;
+                                border: 1px solid transparent;
+                                font: 18px $geo-l;
+                                padding: 15px 15px 15px 70px;
+                                height: 64px;
+                                transition: .2s ease;
+                                @include placeholder {
+                                    color: #1b2c55;
+                                    opacity: .6;
+                                }
+                                &:focus {
+                                    @include placeholder {
+                                        color: #1b2c55;
+                                        opacity: 1;
+                                    }
+                                }
+                                @include mq('tablet') {
+                                    height: 50px;
+                                    background-position: 24px 12px;
+                                    font-size: 16px;
+                                }
+                                &.name {
+                                    background-image: svg-load('../svg-icons/support-name.svg');
+                                }
+                                &.email {
+                                    background-image: svg-load('../svg-icons/support-email.svg');
+                                }
+                                &.message {
+                                    background-image: svg-load('../svg-icons/support-message.svg');
+                                }
+                            }
+                            textarea {
+                                resize: none;
+                                min-height: 120px;
+                                padding: 20px 15px 20px 70px !important;
+                                @include mq('tablet') {
+                                    padding: 13px 15px 13px 70px !important;
+                                }
+                            }
+                            &.has-error {
+                                .form-control {
+                                    border-color: red;
+                                }
+                            }
+                        }
+                        button.send {
+                            margin-top: 13px;
+                            height: 64px;
+                            padding: 15px 100px;
+                            @include mq('tablet') {
+                                display: block;
+                                margin: auto;
+                                padding: 15px 60px;
+                            }
+                        }
+                        .form-message {
+                            display: none;
+                            margin-top: 30px;
+                            padding: 15px;
+                            text-align: center;
+                            &.success {
+                                background-color: #b5ffb5;
+                            }
+                            &.error {
+                                background-color: #fec4c4;
+                            }
+                            p {
+                                font: 20px $geo-b;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

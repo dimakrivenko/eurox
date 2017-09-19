@@ -1,0 +1,43 @@
+//-==============================
+//-  Support
+//-==============================
+
+extend ../layouts/_default
+block body
+	
+    section.l-single-page
+        .page-header
+            include ../partials/_header
+            .container
+                .row
+                    .col-lg-12
+                        h1.title Security
+                        
+        .page-content
+            .container
+                .row.content.support
+                    .col-md-6
+                        .left
+                            h2 Support and Operations:
+                            h4 Finles Capital Management
+                            p Euclideslaan 151, 3584 BS Utrecht The Netherlands
+                            ul
+                                li
+                                    i.phone
+                                    a(href="tel:+31302974935") +31 302 974 935
+                                li
+                                    i.mail
+                                    a(href="mailto:support@eurox.io") support@eurox.io
+                    .col-md-6
+                        .right
+                            h2 Contact Us
+                            form.common-form(data-toggle="validator", role="form", data-focus="false")
+                                .form-group
+                                    input.form-control.name(type="text", name="name", placeholder="Name*" required)
+                                .form-group
+                                    input.form-control.email(type="email", name="email", placeholder="Email*" required)
+                                .form-group
+                                    textarea.form-control.message(name="message", placeholder="Message")
+                                button.btn.default.send Send
+                                .form-message
+                                    p 

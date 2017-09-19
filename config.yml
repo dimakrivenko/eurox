@@ -1,0 +1,44 @@
+# Your project's server will run on localhost:xxxx at this port
+PORT: 8000
+
+# Autoprefixer will make sure your CSS works with these browsers
+COMPATIBILITY:
+  - "> 5%"
+  - "last 15 versions"
+  - "ie >= 7"
+
+# UnCSS will use these settings
+UNCSS_OPTIONS:
+  html:
+    - "dist/**/*.html"
+  ignore:
+    - !!js/regexp ^\.is-.*
+    - !!js/regexp .is-active
+    - !!js/regexp .is-blur
+    - !!js/regexp .is-overflow-h
+    - !!js/regexp .has-error
+    - !!js/regexp .success
+    - !!js/regexp .error
+    - !!js/regexp .animated
+
+# Gulp will reference these paths when it copies files
+PATHS:
+  # Path to dist folder
+  dist: "dist"
+  # Paths to static assets that aren't images, CSS, or JavaScript
+  assets:
+    - "src/assets/**/*"
+    - "!src/assets/{img,js,scss}/**/*"
+  # Paths to Sass libraries, which can then be loaded with @import
+  sass:
+    - "bower_components/bootstrap-sass/assets/stylesheets"
+  # Paths to JavaScript libraries, which are compined into one file
+  javascript:
+    # Библиотеки
+    - "bower_components/jquery/dist/jquery.js"
+    #- "bower_components/what-input/what-input.js"
+    - "bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"
+
+    # Твой код
+    - "src/assets/js/!(main).js"
+    - "src/assets/js/main.js"

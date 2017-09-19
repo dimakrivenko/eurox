@@ -1,0 +1,25 @@
+//-----------------------------------
+//   Operations
+//-----------------------------------
+
+.l-operations {
+    padding: 80px 0 120px 0;
+    overflow: hidden;
+    @include mq('tablet') {
+        padding: 20px 0 80px 0;
+    }
+    h2.block-title {
+        text-align: center;
+        font: 48px $geo-b;
+        text-transform: uppercase;
+        margin-bottom: 80px;
+        @include mq('tablet') {
+            font: 30px/34px $geo-b;
+            margin-bottom: 40px;
+        }
+    }
+    img.lazy {
+        width: 100%;
+        height: auto;
+    }
+}

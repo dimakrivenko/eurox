@@ -1,0 +1,51 @@
+//-----------------------------------
+//   Fonts
+//-----------------------------------
+
+// Geometria Medium
+@font-face {
+    font-family: 'geometriamedium';
+    src: url('../fonts/geometria-medium-webfont.eot');
+    src: url('../fonts/geometria-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/geometria-medium-webfont.woff2') format('woff2'),
+         url('../fonts/geometria-medium-webfont.woff') format('woff'),
+         url('../fonts/geometria-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Geometria Light
+@font-face {
+    font-family: 'geometrialight';
+    src: url('../fonts/geometria-light-webfont.eot');
+    src: url('../fonts/geometria-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/geometria-light-webfont.woff2') format('woff2'),
+         url('../fonts/geometria-light-webfont.woff') format('woff'),
+         url('../fonts/geometria-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Geometria Bold
+@font-face {
+    font-family: 'geometriabold';
+    src: url('../fonts/geometria-bold-webfont.eot');
+    src: url('../fonts/geometria-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/geometria-bold-webfont.woff2') format('woff2'),
+         url('../fonts/geometria-bold-webfont.woff') format('woff'),
+         url('../fonts/geometria-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Geometria Regular
+@font-face {
+    font-family: 'geometriaregular';
+    src: url('../fonts/geometria-webfont.eot');
+    src: url('../fonts/geometria-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/geometria-webfont.woff2') format('woff2'),
+         url('../fonts/geometria-webfont.woff') format('woff'),
+         url('../fonts/geometria-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

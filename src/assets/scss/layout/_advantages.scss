@@ -1,0 +1,107 @@
+//-----------------------------------
+//   Advantages
+//-----------------------------------
+
+.l-advantages {
+    padding: 140px 0;
+    overflow: hidden;
+    @include mq('tablet') {
+        padding: 70px 0;
+    }
+    h2.block-title {
+        text-align: center;
+        font: 48px $geo-b;
+        text-transform: uppercase;
+        margin-bottom: 80px;
+        @include mq('tablet') {
+            font: 30px/34px $geo-b;
+            margin-bottom: 40px;
+        }
+    }
+    .list-item {
+        text-align: center;
+        font-size: 0;
+    }
+    .item {
+        display: inline-block;
+        vertical-align: top;
+        margin-bottom: 70px;
+        // padding: 0 15px;
+        margin-right: 50px;
+        width: calc(33.33333% - 35px);
+        text-align: left;
+        @include mq('tablet-wide', min) {
+            &:nth-child(3n+3) {
+                margin-right: 0;
+            }
+        }
+        @include mq('tablet-wide') {
+            width: calc(50% - 45px);
+            &:nth-child(2n+2) {
+                margin-right: 40px;
+            }
+        }
+        @include mq('tablet') {
+            width: 100% !important;
+            margin-bottom: 50px;
+            margin: 0 0 50px 0 !important;
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+        .ico-body {
+            height: 120px;
+            margin-bottom: 45px;
+            @include mq('tablet') {
+                height: auto;
+                margin-bottom: 30px;
+            }
+        }
+        .ico {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            &.ico-1 {
+                width: 131px;
+                height: 85px;
+            }
+            &.ico-2 {
+                width: 180px;
+                height: 118px;
+            }
+            &.ico-3 {
+                width: 186px;
+                height: 112px;
+            }
+            &.ico-4 {
+                width: 111px;
+                height: 98px;
+            }
+            &.ico-5 {
+                width: 140px;
+                height: 89px;
+            }
+            &.ico-6 {
+                width: 168px;
+                height: 112px;
+            }
+        }
+        h4 {
+            font: 24px $geo-m;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            @include mq('tablet-wide') {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+        }
+        p {
+            font: 18px/26px $geo-m;
+            opacity: .8;
+            @include mq('tablet-wide') {
+                font: 16px/24px $geo-m;
+            }
+        }
+    }
+}

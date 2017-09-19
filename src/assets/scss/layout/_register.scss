@@ -1,0 +1,64 @@
+//-----------------------------------
+//   Register
+//-----------------------------------
+
+.l-register {
+    position: relative;
+    padding: 120px 0 210px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    @include mq('tablet') {
+        padding: 90px 0 85px 0;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -100px;
+        left: -30px;
+        width: calc(100% + 50px);
+        height: 200px;
+        background-color: #fff;
+        transform: rotate(-7deg);
+    }
+    .text {
+        position: relative;
+        z-index: 2;
+        h2 {
+            font: 44px/64px $geo-b;
+            text-transform: uppercase;
+            color: $aqua;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+            @include mq('tablet-wide') {
+                font: 36px/50px $geo-b;
+            }
+            @include mq('tablet') {
+                font: 30px/34px $geo-b !important;
+                margin-bottom: 25px;
+            }
+        }
+        p {
+            color: #fff;
+            font: 36px/50px $geo-r;
+            margin-bottom: 35px;
+            @include mq('tablet-wide') {
+                font: 28px/42px $geo-r;
+            }
+            @include mq('tablet') {
+                font: 20px/24px $geo-r !important;
+                margin-bottom: 80px;
+            }
+            strong {
+                font-family: $geo-b;
+            }
+        }
+        .btn {
+            @include mq('tablet') {
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}

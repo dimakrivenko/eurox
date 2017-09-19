@@ -1,0 +1,127 @@
+//-----------------------------------
+//   Block info 1
+//-----------------------------------
+
+.l-block-info-1 {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    margin-top: -130px;
+    transform: skewY(-7deg);
+    background-color: #fff;
+    .container-body {
+        background: svg-load('../svg-icons/graph.svg') no-repeat bottom center;
+        background-size: cover;
+        transform: skewY(7deg);
+        padding: 160px 0 220px 0;
+        @media only screen and (min-width: 1600px) {
+            padding-top: 260px;
+        }
+        @include mq('tablet') {
+            padding: 120px 0 180px 0;
+        }
+        @include mq('tablet') {
+            background-size: contain;
+            background-position: center;
+        }
+    }
+    .top-block {
+        padding-bottom: 120px;
+        @include mq('tablet') {
+            padding-bottom: 60px;
+        }
+    }
+    .logo {
+        display: block;
+        margin: auto;
+        width: 340px;
+        height: 340px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        @include mq('tablet') {
+            width: 210px;
+            height: 270px;
+        }
+    }
+    .text {
+        padding-top: 60px;
+        h4 {
+            font: 48px $geo-b;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            @include mq('tablet') {
+                font: 30px/34px $geo-b;
+                margin-bottom: 15px;
+            }
+        }
+        p {
+            font: 36px/44px $geo-r;
+            opacity: .9;
+            @include mq('tablet') {
+                font: 20px/24px $geo-r;
+            }
+        }
+    }
+    .logo-list {
+        font-size: 0;
+        text-align: center;
+        .item {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 70px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            @include mq('desktop') {
+                margin-right: 20px;
+            }
+            @include mq('tablet-wide') {
+                margin-bottom: 25px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &.i-1 {
+                width: 160px;
+                height: 25px;
+                @include mq('tablet') {
+                    width: 128px;
+                    height: 20px;
+                }
+            }
+            &.i-2 {
+                width: 253px;
+                height: 29px;
+                @include mq('tablet') {
+                    width: 202px;
+                    height: 23px;
+                }
+            }
+            &.i-3 {
+                width: 154px;
+                height: 53px;
+                @include mq('tablet') {
+                    width: 123px;
+                    height: 42px;
+                }
+            }
+            &.i-4 {
+                width: 139px;
+                height: 41px;
+                @include mq('tablet') {
+                    width: 111px;
+                    height: 33px;
+                }
+            }
+            &.i-5 {
+                width: 150px;
+                height: 28px;
+                @include mq('tablet') {
+                    width: 120px;
+                    height: 22px;
+                }
+            }
+        }
+    }
+}

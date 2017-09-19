@@ -1,0 +1,12 @@
+//-----------------------------------
+//   Main
+//-----------------------------------
+
+.l-main {
+	height: 100%;
+	display: table-row;
+	transition: filter .2s ease;
+	&.is-blur {
+		filter: blur(8px);
+	}
+}

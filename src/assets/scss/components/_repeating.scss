@@ -1,0 +1,32 @@
+//-----------------------------------
+//   Reapiting styles
+//-----------------------------------
+
+.btn {
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font: 16px/20px $geo-b;
+    padding: 13px 35px 11px;
+    transition: .2s ease;
+    @include mq('tablet') {
+        font: 14px/18px $geo-b;
+    }
+    &:focus {
+        outline: none !important;
+    }
+    &:active {
+        outline: none !important;
+        box-shadow: none;
+    }
+    &.default {
+        color: #1b2c55;
+        background-color: $aqua;
+        &:hover {
+            background-color: darken($aqua, 10%);
+        }
+        &:active {
+            transform: translateY(1px);
+        }
+    }
+}

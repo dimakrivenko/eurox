@@ -1,0 +1,86 @@
+//-----------------------------------
+//   Features
+//-----------------------------------
+
+.l-features {
+    padding: 170px 0 140px 0;
+    overflow: hidden;
+    @include mq('tablet-wide') {
+        padding: 100px 0;
+    }
+    @include mq('tablet') {
+        padding: 70px 0 !important;
+    }
+    .text {
+        padding-top: 40px;
+        @include mq('tablet-wide') {
+            padding-top: 0;
+        }
+        h4 {
+            font: 48px/54px $geo-b;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            @include mq('tablet-wide') {
+                text-align: center;
+            }
+            @include mq('tablet') {
+                font: 30px/34px $geo-b;
+                margin-bottom: 25px;
+            }
+        }
+        p {
+            font: 20px/29px $geo-r;
+            margin-bottom: 20px;
+            @include mq('tablet') {
+                font: 16px/24px $geo-r;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            strong {
+                font-family: $geo-b;
+            }
+        }
+    }
+    .laptop {
+        position: relative;
+        width: 650px;
+        height: 470px;
+        background: svg-load('../svg-icons/laptop.svg') no-repeat top center;
+        background-size: contain;
+        @include mq('desktop') {
+            width: 520px;
+            height: 345px;
+        }
+        @include mq('tablet-wide') {
+            margin: 0 auto 50px auto;
+        }
+        @include mq('tablet') {
+            width: 275px !important;
+            height: 180px !important;
+        }
+        .img {
+            position: absolute;
+            top: 38px;
+            left: 123px;
+            width: 407px;
+            height: 275px;
+            background-color: #ddd;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            @include mq('desktop') {
+                top: 32px;
+                left: 112px;
+                width: 299px;
+                height: 198px;
+            }
+            @include mq('tablet') {
+                top: 16px !important;
+                left: 61px !important;
+                width: 155px !important;
+                height: 105px !important;
+            }
+        }
+    }
+}

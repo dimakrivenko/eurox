@@ -1,0 +1,79 @@
+//-----------------------------------
+//   Block info 2
+//-----------------------------------
+
+.l-block-info-2 {
+    position: relative;
+    background-image: linear-gradient(52deg, #040122, #55e6ff);
+    padding: 150px 0 180px 0;
+    margin-top: -130px;
+    @include mq('tablet-wide') {
+        padding: 0 0 100px 0;
+    }
+    @include mq('tablet') {
+        padding: 0 0 30px 0 !important;
+    }
+    .text {
+        padding-top: 180px;
+        @include mq('desktop') {
+            padding-top: 140px;
+        }
+        @include mq('tablet-wide') {
+            padding-top: 50px !important;
+        }
+        h4 {
+            font: 48px/64px $geo-b;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            @include mq('tablet-wide') {
+                margin-bottom: 20px;
+            }
+            @include mq('tablet') {
+                font: 30px/34px $geo-b;
+            }
+        }
+        p {
+            font: 20px/29px $geo-r;
+            color: #fff;
+            @include mq('tablet') {
+                font: 16px/24px $geo-r;
+            }
+            span {
+                color: $aqua;
+            }
+        }
+    }
+    .right {
+        text-align: center;
+        .ico {
+            position: relative;
+            display: inline-block;
+            width: 440px;
+            height: 470px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            @include mq('desktop') {
+                width: 395px;
+                height: 430px;
+                z-index: 3;
+            }
+            @include mq('tablet') {
+                width: 250px !important;
+                height: 270px !important;
+            }
+        }
+        p {
+            font: 24px/32px $geo-m;
+            text-transform: uppercase;
+            color: $aqua;
+            margin-top: -30px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+            @include mq('tablet') {
+                font: 20px/28px $geo-m;
+                margin-top: -25px;
+            }
+        }
+    }
+}

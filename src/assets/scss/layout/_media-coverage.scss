@@ -1,0 +1,78 @@
+//-----------------------------------
+//   Media coverage
+//-----------------------------------
+
+.l-media-coverage {
+    padding: 140px 0;
+    overflow: hidden;
+    @include mq('tablet') {
+        padding: 70px 0;
+    }
+    h2.block-title {
+        text-align: center;
+        font: 48px $geo-b;
+        text-transform: uppercase;
+        margin-bottom: 80px;
+        @include mq('tablet') {
+            font: 30px/34px $geo-b;
+            margin-bottom: 40px;
+        }
+    }
+    .item {
+        @include mq('tablet-wide') {
+            margin-bottom: 60px;
+            &.last {
+                margin-bottom: 0;
+            }
+        }
+        .img-body {
+            display: flex;
+            align-items: flex-end;
+            height: 140px;
+            margin-bottom: 40px;
+            @include mq('tablet-wide') {
+                height: auto;
+            }
+            img {
+                width: 70%;
+                @include mq('tablet-wide') {
+                    max-width: 250px;
+                }
+            }
+        }
+        p {
+            font: 24px/34px $geo-m;
+            margin-bottom: 35px;
+            @include mq('tablet') {
+                font: 20px/28px $geo-m;
+                margin-bottom: 20px;
+            }
+        }
+        a.more {
+            font-size: 0;
+            transition: .2s;
+            opacity: .8;
+            i {
+                display: inline-block;
+                vertical-align: middle;
+                width: 16px;
+                height: 16px;
+                margin-right: 10px;
+                background: svg-load('../svg-icons/read-more.svg') no-repeat center;
+                background-size: contain;
+            }
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                letter-spacing: 0.8px;
+                color: #303f9f;
+                font: 14px $geo-m;
+                text-transform: uppercase;
+
+            }
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

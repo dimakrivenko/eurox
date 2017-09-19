@@ -1,0 +1,37 @@
+//-==============================
+//-  Fees
+//-==============================
+
+extend ../layouts/_default
+block body
+	
+    section.l-single-page
+        .page-header
+            include ../partials/_header
+            .container
+                .row
+                    .col-lg-12
+                        h1.title Fees
+                        
+        .page-content
+            .container
+                .row
+                    .col-lg-10.col-lg-offset-1.col-md-12
+                        .content.fees
+                            .text
+                                h2 Fee Schedule
+                                .row
+                                    .col-md-5
+                                        .item
+                                            img.lazy(data-original="./assets/svg-icons/fees-ico-1.svg")
+                                            h4 From Ethereum wallet to Ethereum wallet
+                                            p.
+                                                <span>Send/receive Euroxes from Ethereum wallet to Ethereum
+                                                wallet – Ethereum network fees, we don’t charge any fees.</span>
+                                    .col-md-5.col-md-offset-2
+                                        .item.last
+                                            img.lazy(data-original="./assets/svg-icons/fees-ico-2.svg")
+                                            h4 from bank account
+                                            p.
+                                                <span>Send/receive Euroxes from bank account – </span><strong>0.1% or 20 EURS</strong><span> whatever is greater.<span>
+                                        

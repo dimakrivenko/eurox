@@ -1,0 +1,123 @@
+//-----------------------------------
+//   History
+//-----------------------------------
+
+.l-history {
+    display: table;
+    width: 100%;
+    .left {
+        width: 42%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: right;
+        overflow: hidden;
+        background: resolve('bg-finles.jpg') no-repeat center;
+        @include mq('tablet-wide') {
+            display: block;
+            width: 100%;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 500px;
+            left: -500px;
+            background-color: #56e6ff;
+        }
+        .content {
+            display: inline-block;
+            width: 470px;
+            text-align: left;
+            padding: 0 80px 0 15px;
+            @include mq('desktop') {
+                width: 100%;
+            }
+            @include mq('tablet-wide') {
+                padding: 50px 15px;
+                text-align: center;
+            }
+            .table {
+                display: table;
+                margin: 0;
+                .ceil {
+                    display: table-cell;
+                    vertical-align: middle;
+                    @include mq('tablet') {
+                        text-align: left;
+                    }
+                }
+            }
+            img {
+                display: inline-block;
+                width: 288px;
+                height: 111px;
+                margin-bottom: 50px;
+                @include mq('tablet-wide') {
+                    margin-bottom: 20px;
+                }
+                @include mq('tablet') {
+                    width: 220px;
+                    height: auto;
+                }
+            }
+            p {
+                font: 20px/29px $geo-r;
+                @include mq('tablet') {
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+    .right {
+        width: 58%;
+        display: table-cell;
+        background-color: #050223;
+        overflow: hidden;
+        @include mq('tablet-wide') {
+            display: block;
+            width: 100%;
+        }
+        .content {
+            display: inline-block;
+            width: 700px;
+            padding: 70px 15px 110px 40px;
+            @include mq('desktop') {
+                width: 100%;
+            }
+            @include mq('tablet') {
+                padding: 30px 15px;
+            }
+            h4 {
+                font: 36px/46px $geo-m;
+                color: #fff;
+                text-transform: uppercase;
+                margin-bottom: 35px;
+                @include mq('tablet') {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                span {
+                    color: $aqua;
+                }
+            }
+            ul {
+                padding-left: 18px;
+                li {
+                    font: 20px/29px $geo-m;
+                    margin-bottom: 25px;
+                    color: #fff;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    @include mq('tablet') {
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

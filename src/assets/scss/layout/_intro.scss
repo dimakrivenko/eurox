@@ -1,0 +1,57 @@
+//-----------------------------------
+//   Intro
+//-----------------------------------
+
+.l-intro {
+    position: relative;
+    background: resolve('intro-bg.jpg') no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    // &:before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-image: linear-gradient(52deg, #040122, #55e6ff);
+    //     opacity: .9;
+    // }
+    .content {
+        position: relative;
+    }
+    .text {
+        position: relative;
+        margin: 115px 0 215px 0;
+        @include mq('tablet') {
+            margin: 40px 0 100px 0;
+            z-index: 3;
+        }
+        h1 {
+            font: 44px/64px $geo-b;
+            color: $aqua;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+            @include mq('tablet') {
+                font: 30px/34px $geo-b;
+                margin-bottom: 15px;
+            }
+        }
+        p {
+            font: 36px/50px $geo-r;
+            color: #fff;
+            margin-bottom: 50px;
+            @include mq('tablet') {
+                font: 20px/24px $geo-r;
+                margin-bottom: 40px;
+            }
+        }
+        .btn {
+            @include mq('tablet') {
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}
