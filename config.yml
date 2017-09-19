@@ -20,6 +20,7 @@ UNCSS_OPTIONS:
     - !!js/regexp .success
     - !!js/regexp .error
     - !!js/regexp .animated
+    - !!js/regexp .content
 
 # Gulp will reference these paths when it copies files
 PATHS:
