@@ -10,7 +10,7 @@
     padding: 13px 35px 11px;
     transition: .2s ease;
     @include mq('tablet') {
-        font: 14px/18px $geo-b;
+        font: 14px/18px $geo-b; 
     }
     &:focus {
         outline: none !important;

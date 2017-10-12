@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	// Lazy load
 	$(".lazy").lazyload({
-		// effect: 'fadeIn'
+		effect: 'fadeIn'
 	});
 
 	// Wow animation

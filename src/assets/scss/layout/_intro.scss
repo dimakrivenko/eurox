@@ -33,6 +33,11 @@
             margin-bottom: 30px;
             text-transform: uppercase;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+            @include mq('tablet-wide') {
+                br {
+                    display: none;
+                }
+            }
             @include mq('tablet') {
                 font: 30px/34px $geo-b;
                 margin-bottom: 15px;
@@ -42,6 +47,11 @@
             font: 36px/50px $geo-r;
             color: #fff;
             margin-bottom: 50px;
+            @include mq('tablet-wide') {
+                br {
+                    display: none;
+                }
+            }
             @include mq('tablet') {
                 font: 20px/24px $geo-r;
                 margin-bottom: 40px;
